@@ -1,0 +1,145 @@
+<div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
+    <!-- <div class="tb-position--absolute tb-height--full"> -->
+    <!-- <div class="background-bar">
+
+        <div class="tb-container vertical-line-container" fxLayoutAlign="space-between stretch">
+            <div class="vertical-lines"></div>
+            <div class="vertical-lines"></div>
+            <div class="vertical-lines"></div>
+        </div>
+    </div> -->
+    <div class="tb-container tb-position--relative container">
+        <div fxLayout="column" fxLayoutAlign="start stretch">
+            <!-- <p>home-about works!</p> -->
+
+            <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row"
+                fxLayoutAlign="start end">
+                <h4 class="title current-typo--h4 tb-flex--shrink-0">Sobre mim</h4>
+                <div class="tb-width--12"></div>
+                <div fxFlex="60" class="line tb-color-bg--black"></div>
+                <div fxFlex class=""></div>
+            </div>
+
+            <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+
+            <div fxLayout="row" fxLayout.xs="column">
+                <div [fxFlexOrder]='1' [fxFlexOrder.xs]="2" fxFlex fxFlex.xs="none" fxFlex.sm="70" fxLayout="column">
+                    <div ngClass.gt-xs="tb-height--64" ngClass.xs="tb-height--20"></div>
+
+                    <p [@transitionText]="{value:_mTriggerAnim, params:{animDelay:200}}"
+                        class="current-typo--body1-medium tb-color--black-54">In 2011, I became interested in making
+                        <span class="tb-color--black">Android apps</span> when I was creating an Android-controlled Bluetooth interface for a home automation
+                        project. Since then, I have made over <span class="tb-color--black">20+ Android apps</span> and <span class="tb-color--black">15+ webapps</span>.</p>
+                        <div ngClass.gt-sm="tb-height--12" ngClass.sm="tb-height--8" ngClass.xs="tb-height--6"></div>
+
+                    <p [@transitionText]="{value:_mTriggerAnim, params:{animDelay:200}}"
+                        class="current-typo--body1-medium tb-color--black-54">My objective is to make development as easy as possible with simple and beautiful designs and organised code
+                        patterns.</p>
+                    <!-- <p [@transitionText]="{value:_mTriggerAnim, params:{animDelay:300}}"
+                        class="current-typo--body1-medium tb-color--black-54">I have built over 30+ products in last 5
+                        years.</p> -->
+
+                    <div ngClass.gt-sm="tb-height--56" ngClass.sm="tb-height--46" ngClass.xs="tb-height--32"></div>
+
+                    <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:300}}" fxLayout="row">
+                        <div fxFlex fxLayout="column" fxLayoutGap="12" fxLayoutAlign="start start">
+                            <h2 class="title current-typo--h3-light">07+</h2>
+                            <h4 class="title current-typo--h6">Years of Experience</h4>
+
+                        </div>
+
+                        <div fxFlex fxLayout="column" fxLayoutGap="12" fxLayoutAlign="start start">
+                            <h2 class="title current-typo--h3-light">40+</h2>
+                            <h4 class="title current-typo--h6">Projects Completed</h4>
+
+                        </div>
+
+                    </div>
+
+                    <div ngClass.gt-sm="tb-height--56" ngClass.sm="tb-height--46" ngClass.xs="tb-height--32"></div>
+
+                    <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:400}}" fxLayout="row wrap"
+                        fxLayoutGap="6">
+                        <div class="skill tb-color-bg--black-6">
+                            <h5 class="current-typo--h5">Design</h5>
+                        </div>
+
+                        <div class="skill" style="background-color: #FFD647;">
+                            <h5 class="current-typo--h5 tb-color--black">UI/UX</h5>
+                        </div>
+
+                        <div class="skill" style="background-color: #F57FFF;">
+                            <h5 class="current-typo--h5 tb-color--black">Logo</h5>
+                        </div>
+
+                        <div class="skill" style="background-color: #6F73C3;">
+                            <h5 class="current-typo--h5 tb-color--white">Prototype</h5>
+                        </div>
+                    </div>
+                    <div class="tb-height--8"></div>
+
+                    <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:500}}" fxLayout="row wrap"
+                        fxLayoutGap="6">
+                        <div class="skill tb-color-bg--black-6">
+                            <h5 class="current-typo--h5">Development</h5>
+                        </div>
+
+                        <div class="skill" style="background-color: #F44040;">
+                            <h5 class="current-typo--h5 tb-color--white">Angular</h5>
+                        </div>
+
+                        <div class="skill" style="background-color: #68F17E;">
+                            <h5 class="current-typo--h5 tb-color--black">Android</h5>
+                        </div>
+
+                        <div class="skill" style="background-color: #027DFD;">
+                            <h5 class="current-typo--h5 tb-color--white">MySql</h5>
+                        </div>
+                    </div>
+
+
+
+
+                    <div ngClass.gt-sm="tb-height--56" ngClass.sm="tb-height--46" ngClass.xs="tb-height--32"></div>
+
+                    <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:600}}" fxLayout="row"
+                        fxLayoutAlign="start center" fxLayoutGap="32">
+                        <a class="btn-area-cv" href="https://drive.google.com/file/d/1jFFc7Af7clmWZ1cfcVVP78AuTmMO4Q_4/view?usp=sharing" target="_blank">
+                            <button mat-raised-button color="primary"><span class="current-typo--button-medium">Download
+                                    CV.</span></button>
+
+                            </a>
+
+                        <!-- <div class="btn-area-hire">
+
+                            <a mat-ripple class="unlink btn-hire tb-color-bg--white" fxLayout="row"
+                                fxLayoutAlign="center center"
+                                href="https://gitter.im/JunkieLabs/common?utm_source=share-link&utm_medium=link&utm_campaign=share-link/"
+                                target="_blank">
+
+                                <p class="current-typo--button-medium tb-font-weight--medium tb-color--black">Hire me
+                                </p>
+                            </a>
+
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <div fxFlex.xs="none" fxFlex [fxFlexOrder.xs]="1" [fxFlexOrder]=' 2' class="image-container"
+                    fxLayout="column" fxLayoutAlign="center stretch">
+                    <div [@transitionImageScale]="{value:_mTriggerAnim, params: {animDelay: 800}}"
+                        class="tb-text--align-center image-area" #imageAreaView>
+                        <img class="image tb-position--relative" src="assets/img/avatar/pic_avatar_f.png" />
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

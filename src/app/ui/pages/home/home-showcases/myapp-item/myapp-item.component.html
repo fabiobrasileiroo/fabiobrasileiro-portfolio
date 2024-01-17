@@ -1,0 +1,35 @@
+<a class="main tb-position--relative unlink" ngClass.xs="xs" ngClass.sm="sm" [href]="_mModel?.link" target="_blank"
+    fxLayout="column" #animRefView>
+    <div class="background" [ngStyle]="{background: _mModel?.background}"></div>
+
+    <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch" class="content tb-position--relative">
+
+        <!-- <h4 class="current-typo--h5 tb-text-align--center tb-color--black" ngClass.xs="current-typo--h6">{{_mModel?.Name}}</h4> -->
+
+
+        <div class="image-area">
+            <img class="image" [src]="_mModel?.image">
+        </div>
+        <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+        <div class="tb-padding--24-36" ngClass.xs="tb-padding--12-20" fxLayout="row" fxLayoutAlign="start center">
+
+            <div fxFlex fxLayout="column" fxLayoutGap="0.6rem">
+                <h6 class="tb-typo--h6 tb-color--black-54">
+                    {{_mModel?.caption}}
+                </h6>
+
+                <h6 class="current-typo--h4-bold tb-color--black">
+                    {{_mModel?.name}}
+                </h6>
+
+
+            </div>
+            <div class="icon-area" [class.icon-outline]="!_mModel?.primary" [ngStyle]="_mModel?.primary ? {background:_mModel?.primary} : {}">
+                <mat-icon svgIcon="arrow"></mat-icon>
+            </div>
+
+        </div>
+
+    </div>
+</a>

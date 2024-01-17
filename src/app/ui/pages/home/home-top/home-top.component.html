@@ -1,0 +1,30 @@
+<div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm">
+    <div class="tb-container tb-position--relative container">
+
+        <div class="content-container" fxLayout="column">
+            <!-- <div ngClass.gt-sm="tb-height--36" ngClass.sm="tb-height--20" ngClass.xs="tb-height--2"></div> -->
+
+            <div ngClass.gt-sm="tb-height--126" ngClass.sm="tb-height--72" ngClass.xs="tb-height--72"></div>
+            <h4 [@transitionTextEnter]="{value:'in', params: {animDelay: 200}}" ngClass.gt-sm="current-typo--h4"
+                ngClass.sm="current-typo--h5" ngClass.xs="current-typo--h5">Olá, meu nome é Fábio Brasileiro</h4>
+            <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--12" ngClass.xs="tb-height--12"></div>
+            <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 300}}" ngClass.gt-sm="current-typo--h1-light"
+                ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">Adoro</h2>
+
+            <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 400}}" ngClass.gt-sm="current-typo--h1-light"
+                ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">falar de Ideias e melhor</h2>
+            <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 500}}" ngClass.gt-sm="current-typo--h1-light"
+                ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">ainda se poder Vende-las</h2>
+             <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 600}}"
+                 class="current-typo--h3"
+                ngClass.sm="current-typo--h3-light">Ideias que viram código</h2> 
+            <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--16" ngClass.xs="tb-height--8"></div>
+
+            <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+                (@transitionTextEnter.done)='_onTextAnimationEnd($event)' class="detail tb-color--black-54"
+                ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+            Sou desenvolvedor Front-end experiente na criação de produtos web. Atualmente, estou criando conteúdo para o YouTube, com vídeos de study with me e programação.</p>
+            <div ngClass.gt-sm="tb-height--126" ngClass.sm="tb-height--72" ngClass.xs="tb-height--72"></div>
+        </div>
+    </div>
+</div>
