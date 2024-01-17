@@ -1,7 +1,7 @@
 ![A preview](https://github.com/nirajprakash/nirajprakash.github.io/blob/main/images/banner.png)
 
 # Personal Portfolio 
-> [nirajprakash.github.io/](https://nirajprakash.github.io/)
+> [fabiobrasileiro-portfolio/](https://github.com/fabiobrasileiroo/fabiobrasileiro-portfolio)
 
 - **Framework**: [Angular14](https://angular.io/)
 - **Styling**: [SCSS](https://sass-lang.com/)
@@ -26,7 +26,7 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/nirajprakash/nirajprakash.github.io.git
+$ git clone git@github.com:fabiobrasileiroo/fabiobrasileiro-portfolio.git
 $ cd braydoncoyer.dev
 $ npm install
 $ ng serve
